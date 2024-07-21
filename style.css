@@ -1,0 +1,498 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Sets the font family to 'Roboto' with 'sans-serif' as a fallback */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    background-color: #0e0e0e; /* Sets the background color to dark gray */
+    color: #eaeaea; /* Sets the text color to light gray */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    font-size: 1.3rem; /* Sets the base font size */
+    user-select: none; /* Prevents text selection */
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+    background: linear-gradient(to bottom, #0e0e0e, #2e2e2e); /* Adds a gradient background */
+}
+
+header {
+    display: flex; /* Uses flexbox for layout */
+    justify-content: space-between; /* Distributes space between items */
+    align-items: center; /* Aligns items vertically in the center */
+    padding: 1.5rem; /* Adds padding around the header */
+    background: linear-gradient(to right, #1c1c1c, #444); /* Adds a gradient background */
+    color: #eaeaea; /* Sets the text color to light gray */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    position: sticky; /* Makes the header stick to the top */
+    top: 0; /* Positions the header at the top */
+    z-index: 1000; /* Ensures the header is on top of other elements */
+}
+
+.logo-banner {
+    font-size: 1.5em; /* Sets the font size for the logo */
+    color: #ff4500; /* Sets the logo color to orange */
+}
+
+nav ul {
+    list-style: none; /* Removes default list styling */
+    display: flex; /* Uses flexbox for layout */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+}
+
+nav ul li {
+    margin: 0 1em; /* Adds margin between list items */
+}
+
+nav ul li a {
+    color: #eaeaea; /* Sets the link color to light gray */
+    text-decoration: none; /* Removes underline from links */
+    padding: 0.5em 1em; /* Adds padding inside the links */
+    border-radius: 5px; /* Rounds the corners of the links */
+    transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Adds transition for background color, text color, and transform */
+}
+
+nav ul li a:hover {
+    background-color: #00bfff; /* Changes background color on hover */
+    color: #fff; /* Changes text color on hover */
+    transform: scale(1.05); /* Scales the element slightly on hover */
+}
+
+.search-bar {
+    display: flex; /* Uses flexbox for layout */
+    align-items: center; /* Aligns items vertically in the center */
+    margin: 0 auto; /* Centers the search bar */
+}
+
+.search-bar input {
+    padding: 0.5em; /* Adds padding inside the input */
+    border-radius: 5px 0 0 5px; /* Rounds the left corners of the input */
+    border: 1px solid #444; /* Sets the border color to dark gray */
+    background: #333; /* Sets the background color to dark gray */
+    color: #eaeaea; /* Sets the text color to light gray */
+    outline: none; /* Removes the default outline */
+}
+
+.search-bar button {
+    padding: 0.5em; /* Adds padding inside the button */
+    border-radius: 0 5px 5px 0; /* Rounds the right corners of the button */
+    border: 1px solid #444; /* Sets the border color to dark gray */
+    background: linear-gradient(to right, #00bfff, #1e90ff); /* Adds a gradient background */
+    color: #eaeaea; /* Sets the text color to light gray */
+    cursor: pointer; /* Changes the cursor to a pointer */
+    outline: none; /* Removes the default outline */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
+    transition: background 0.3s; /* Adds transition for background color */
+}
+
+.search-bar button:hover {
+    background: linear-gradient(to right, #1e90ff, #00bfff); /* Changes the gradient background on hover */
+}
+
+.account-info {
+    background: linear-gradient(to right, #00bfff, #1e90ff); /* Adds a gradient background */
+    border: none; /* Removes the default border */
+    border-radius: 5px; /* Rounds the corners */
+    padding: 0.5em 1em; /* Adds padding inside the button */
+    color: #eaeaea; /* Sets the text color to light gray */
+    cursor: pointer; /* Changes the cursor to a pointer */
+    transition: background 0.3s; /* Adds transition for background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
+}
+
+.account-info:hover {
+    background: linear-gradient(to right, #1e90ff, #00bfff); /* Changes the gradient background on hover */
+}
+
+main {
+    padding: 10vh 15vw; /* Adds padding inside the main element */
+    display: grid; /* Uses CSS grid for layout */
+    grid-template-columns: repeat(4, 1fr); /* Creates 4 equal columns */
+    grid-gap: 2rem; /* Adds space between grid items */
+}
+
+.hero {
+    grid-column: span 4; /* Spans the element across 4 columns */
+    background-image: url('hero-image.jpg'); /* Sets the background image */
+    background: linear-gradient(to bottom right, #1e90ff, #00bfff); /* Adds a gradient background */
+}
+
+.subscribe {
+    grid-column: span 2; /* Spans the element across 2 columns */
+    background-image: url('subscribe-image.jpg'); /* Sets the background image */
+    background: linear-gradient(to bottom right, #ff6347, #ff4500); /* Adds a gradient background */
+}
+
+.featured-reviews {
+    grid-column: span 2; /* Spans the element across 2 columns */
+    background-image: url('featured-reviews-image.jpg'); /* Sets the background image */
+    background: linear-gradient(to bottom right, #32cd32, #00ff7f); /* Adds a gradient background */
+}
+
+.latest-tech {
+    grid-column: span 2; /* Spans the element across 2 columns */
+    background-image: url('latest-tech-image.jpg'); /* Sets the background image */
+    background: linear-gradient(to bottom right, #ffa07a, #ff6347); /* Adds a gradient background */
+}
+
+.top-tutorials {
+    grid-column: span 2; /* Spans the element across 2 columns */
+    background-image: url('top-tutorials-image.jpg'); /* Sets the background image */
+    background: linear-gradient(to bottom right, #00ced1, #20b2aa); /* Adds a gradient background */
+}
+
+.community-discussion {
+    grid-column: span 4; /* Spans the element across 4 columns */
+    background-image: url('community-discussion-image.jpg'); /* Sets the background image */
+    background: linear-gradient(to bottom right, #ff69b4, #ff1493); /* Adds a gradient background */
+}
+
+section {
+    padding: 2rem; /* Adds padding inside the section */
+    background: linear-gradient(to bottom, #1c1c1c, #333); /* Adds a gradient background */
+    border-radius: 10px; /* Rounds the corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Adds a shadow effect */
+    opacity: 0; /* Sets initial opacity */
+    transform: translateY(50px); /* Moves the element down initially */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Adds transition for opacity and transform */
+    background-size: cover; /* Ensures background image covers the section */
+    background-position: center; /* Centers the background image */
+    color: #fff; /* Sets the text color to white */
+    position: relative; /* Allows positioning of child elements */
+    will-change: opacity, transform; /* Optimizes performance for opacity and transform changes */
+}
+
+section.visible {
+    opacity: 1; /* Sets opacity to 1 when visible */
+    transform: translateY(0); /* Moves the element to its original position */
+}
+
+section .description {
+    background: rgba(0, 0, 0, 0.7); /* Sets the background color with transparency */
+    padding: 1rem; /* Adds padding inside the description */
+    border-radius: 5px; /* Rounds the corners */
+    margin-top: 1rem; /* Adds margin at the top */
+    width: 50%; /* Sets the width to 50% */
+}
+
+.hero-title {
+    color: #FFA500; /* Sets the text color to orange */
+}
+
+.subscribe-title {
+    color: #FFD700; /* Sets the text color to gold */
+}
+
+.featured-reviews-title {
+    color: #ADFF2F; /* Sets the text color to green-yellow */
+}
+
+.latest-tech-title {
+    color: #FF6347; /* Sets the text color to tomato */
+}
+
+.top-tutorials-title {
+    color: #20B2AA; /* Sets the text color to light sea green */
+}
+
+.community-discussion-title {
+    color: #FF69B4; /* Sets the text color to hot pink */
+}
+
+.read-more {
+    position: absolute; /* Positions the button absolutely */
+    top: 1rem; /* Positions the button 1rem from the top */
+    right: 1rem; /* Positions the button 1rem from the right */
+    background: linear-gradient(to right, #1e90ff, #00bfff); /* Adds a gradient background */
+    color: #fff; /* Sets the text color to white */
+    border: none; /* Removes the default border */
+    border-radius: 5px; /* Rounds the corners */
+    padding: 0.5em 1em; /* Adds padding inside the button */
+    cursor: pointer; /* Changes the cursor to a pointer */
+    transition: background 0.3s; /* Adds transition for background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
+}
+
+.read-more:hover {
+    background: linear-gradient(to right, #00bfff, #1e90ff); /* Changes the gradient background on hover */
+}
+
+footer {
+    padding: 2rem; /* Adds padding inside the footer */
+    background: linear-gradient(to right, #444, #1e1e1e); /* Adds a gradient background */
+    color: #ff4500; /* Sets the text color to orange */
+    text-align: center; /* Centers the text */
+    opacity: 0; /* Sets initial opacity */
+    transform: translateY(50px); /* Moves the element down initially */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Adds transition for opacity and transform */
+    will-change: opacity, transform; /* Optimizes performance for opacity and transform changes */
+}
+
+footer.visible {
+    opacity: 1; /* Sets opacity to 1 when visible */
+    transform: translateY(0); /* Moves the element to its original position */
+}
+
+.footer-links {
+    display: flex; /* Uses flexbox for layout */
+    justify-content: center; /* Centers the items */
+    flex-wrap: wrap; /* Allows wrapping of items */
+    margin-bottom: 1rem; /* Adds margin at the bottom */
+}
+
+.footer-links a {
+    color: #FFA500; /* Sets the link color to orange */
+    text-decoration: none; /* Removes underline from links */
+    margin: 0 1rem; /* Adds margin between links */
+    transition: color 0.3s; /* Adds transition for color */
+}
+
+.footer-links a:hover {
+    color: #00bfff; /* Changes link color on hover */
+}
+
+.social-media-icons {
+    margin: 1rem 0; /* Adds margin at the top and bottom */
+}
+
+.social-media-icons a {
+    margin: 0 0.5rem; /* Adds margin between icons */
+    display: inline-block; /* Ensures icons are inline */
+    transition: transform 0.3s; /* Adds transition for transform */
+}
+
+.social-media-icons a:hover {
+    transform: scale(1.2); /* Scales the icon on hover */
+}
+
+.social-media-icons img {
+    width: 32px; /* Sets the width of the icons */
+    height: 32px; /* Sets the height of the icons */
+    transition: filter 0.3s; /* Adds transition for filter */
+}
+
+.social-media-icons img:hover {
+    filter: brightness(1.2); /* Increases brightness on hover */
+}
+
+footer p {
+    margin-top: 1rem; /* Adds margin at the top */
+    font-size: 0.9rem; /* Sets the font size */
+    color: #eaeaea; /* Sets the text color to light gray */
+}
+
+.footer-links a, .social-media-icons img, footer p {
+    opacity: 0; /* Sets initial opacity */
+    animation: fadeInText 1s forwards ease-in-out; /* Adds fade in animation */
+}
+
+.footer-links a:nth-child(1) {
+    animation-delay: 0.2s; /* Delays the animation */
+}
+
+.footer-links a:nth-child(2) {
+    animation-delay: 0.4s; /* Delays the animation */
+}
+
+.footer-links a:nth-child(3) {
+    animation-delay: 0.6s; /* Delays the animation */
+}
+
+.footer-links a:nth-child(4) {
+    animation-delay: 0.8s; /* Delays the animation */
+}
+
+.footer-links a:nth-child(5) {
+    animation-delay: 1s; /* Delays the animation */
+}
+
+.footer-links a:nth-child(6) {
+    animation-delay: 1.2s; /* Delays the animation */
+}
+
+.footer-links a:nth-child(7) {
+    animation-delay: 1.4s; /* Delays the animation */
+}
+
+.social-media-icons img:nth-child(1) {
+    animation-delay: 1.6s; /* Delays the animation */
+}
+
+.social-media-icons img:nth-child(2) {
+    animation-delay: 1.8s; /* Delays the animation */
+}
+
+.social-media-icons img:nth-child(3) {
+    animation-delay: 2s; /* Delays the animation */
+}
+
+.social-media-icons a {
+    margin: 0 0.5rem; /* Adds margin between icons */
+    display: inline-block; /* Ensures icons are inline */
+    transition: transform 0.3s; /* Adds transition for transform */
+    text-decoration: none; /* Removes underline from links */
+    color: rgba(180, 180, 180, 1.0); /* Sets the text color */
+}
+
+.social-media-icons a:hover {
+    transform: scale(1.1); /* Scales the icon on hover */
+}
+
+@keyframes fadeInText {
+    from {
+        opacity: 0; /* Sets initial opacity */
+        transform: translateY(20px); /* Moves the element down initially */
+    }
+    to {
+        opacity: 1; /* Sets final opacity */
+        transform: translateY(0); /* Moves the element to its original position */
+    }
+}
+
+::-webkit-scrollbar {
+    width: 12px; /* Sets the width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #1c1c1c; /* Sets the background color of the scrollbar track */
+    box-shadow: none; /* Removes any shadow behind the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #333; /* Sets the background color of the scrollbar thumb */
+    border-radius: 10px; /* Rounds the corners of the scrollbar thumb */
+    border: 3px solid #1c1c1c; /* Matches the track background color */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #008080; /* Changes the background color on hover */
+}
+
+.contact-section, .about-section {
+    width: 70vw; /* Use viewport width to ensure it takes up 70% of the screen */
+    margin: 0 auto; /* Centers the section */
+    padding: 2rem; /* Adds padding inside the section */
+    background: linear-gradient(to bottom, #1c1c1c, #444); /* Adds a vibrant gradient background */
+    border-radius: 10px; /* Rounds the corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Adds a shadow effect */
+    color: #fff; /* Sets the text color to white */
+    position: relative; /* Allows positioning of child elements */
+    will-change: opacity, transform; /* Optimizes performance for opacity and transform changes */
+}
+
+.contact-section .description, .about-section .description {
+    background: rgba(0, 0, 0, 0.7); /* Sets the background color with transparency */
+    padding: 2vw; /* Adds padding inside the description */
+    border-radius: 5px; /* Rounds the corners */
+    margin-top: 1rem; /* Adds margin at the top */
+    width: 94%; /* Sets the width to 94% */
+}
+
+.contact-section form, .about-section form {
+    display: flex; /* Uses flexbox for layout */
+    flex-direction: column; /* Arranges form elements in a column */
+}
+
+.contact-section form label, .about-section form label {
+    margin-top: 1rem; /* Adds margin at the top */
+    color: #ffa500; /* Adds a bright orange color to the labels */
+}
+
+.contact-section form input, .contact-section form textarea, .about-section form input, .about-section form textarea {
+    padding: 0.5rem; /* Adds padding inside the input and textarea */
+    margin-top: 0.5rem; /* Adds margin at the top */
+    border-radius: 5px; /* Rounds the corners */
+    border: 1px solid #444; /* Sets the border color to dark gray */
+    background: #333; /* Sets the background color to dark gray */
+    color: #eaeaea; /* Sets the text color to light gray */
+    outline: none; /* Removes the default outline */
+}
+
+.contact-section form input:focus, .contact-section form textarea:focus, .about-section form input:focus, .about-section form textarea:focus {
+    border-color: #ffa500; /* Adds a bright orange border when focused */
+}
+
+.contact-section form button, .about-section form button {
+    margin-top: 1rem; /* Adds margin at the top */
+    padding: 0.5rem; /* Adds padding inside the button */
+    border-radius: 5px; /* Rounds the corners */
+    border: 1px solid #444; /* Sets the border color to dark gray */
+    background: linear-gradient(to right, #00bfff, #1e90ff); /* Adds a vibrant gradient background */
+    color: #fff; /* Sets the text color to white */
+    cursor: pointer; /* Changes the cursor to a pointer */
+    outline: none; /* Removes the default outline */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
+    transition: background 0.3s; /* Adds transition for background color */
+}
+
+.contact-section form button:hover, .about-section form button:hover {
+    background: linear-gradient(to right, #1e90ff, #00bfff); /* Changes the gradient background on hover */
+}
+
+.contact-section ul, .about-section ul {
+    margin-top: 1rem; /* Adds margin at the top */
+    color: #ffa500; /* Adds a bright orange color to the list items */
+}
+
+.contact-section ul li, .about-section ul li {
+    margin: 0.5rem 0; /* Adds margin at the top and bottom */
+}
+
+.contact-section a, .about-section a {
+    color: #00bfff; /* Changes the link color to a bright blue */
+    text-decoration: none; /* Removes underline from links */
+}
+
+.contact-section a:hover, .about-section a:hover {
+    color: #1e90ff; /* Changes link color on hover */
+}
+
+.social-media-icons img {
+    width: 32px; /* Sets the width of the icons */
+    height: 32px; /* Sets the height of the icons */
+    margin: 0 0.5rem; /* Adds margin between icons */
+    transition: transform 0.3s, filter 0.3s; /* Adds transition for transform and filter */
+}
+
+.social-media-icons img:hover {
+    transform: scale(1.2); /* Scales the icon on hover */
+    filter: brightness(1.2); /* Increases brightness on hover */
+}
+
+.about-main {
+    display: flex; /* Uses flexbox for layout */
+    flex-direction: column; /* Ensures sections are aligned vertically */
+    align-items: center; /* Centers the sections horizontally */
+    gap: 2rem; /* Adds space between sections */
+    padding: 10vh 0 5vh 0; /* Adds padding at the top and bottom */
+}
+
+.about-section h2 {
+    color: #ffa500; /* Adds a bright orange color to the headings */
+}
+
+@keyframes fadeInText {
+    from {
+        opacity: 0; /* Sets initial opacity */
+        transform: translateY(20px); /* Moves the element down initially */
+    }
+    to {
+        opacity: 1; /* Sets final opacity */
+        transform: translateY(0); /* Moves the element to its original position */
+    }
+}
+
+::-webkit-scrollbar {
+    width: 12px; /* Sets the width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #1c1c1c; /* Sets the background color of the scrollbar track */
+    box-shadow: none; /* Removes any shadow behind the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #333; /* Sets the background color of the scrollbar thumb */
+    border-radius: 10px; /* Rounds the corners of the scrollbar thumb */
+    border: 3px solid #1c1c1c; /* Matches the track background color */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #008080; /* Changes the background color on hover */
+}
